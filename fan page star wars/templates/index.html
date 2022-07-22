@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>star wars</title>
+    <link href="https: //fonts.googleapis.com/css2? familia= Roboto:peso@100;300;400;500;700;900 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='logo.png')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="{{url_for('static',filename='logo.png')}}" class="logo">
+            </a>
+            <nav>
+                <a href="#inico">Inicio</a> <!--referncias que se hacen trabajar con js-->
+                <a href="#nosotros">Nosotros</a>
+                <a href="#filmatografia">filmatografia</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contactenos">Contáctenos</a>
+            </nav>
+
+        </div>
+    </header>
+    <section id="triologiaoriginal" class="seccion">
+        <h1><b>Trilogía Original</b></h1>
+        <div class="containers">
+            <div class="fila">
+                <div class="columna-section1">
+                    <div class="caja">
+                        <img src="{{url_for('static',filename='episodio4.jpg')}}">
+                        <h3>Una nueva esperanza, episodio IV</h3>
+                        <p>Se estrena en el año 1977 causando un furor entre la audiencia
+                            mas jóven dando asi un impacto cultural nunca antes visto
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="columna-section1">
+                    <div class="caja">
+                        <img src="{{url_for('static',filename='episodio5.jpg')}}">
+                        <h3>El imperio contrataca, episodio V</h3>
+                        <p>se estrena en 1980 siendo considerada la mejor de toda la saga, inmortalizando la frase:
+                            Luke, yo soy tu padre.                    
+                        </p>
+                    </div>
+                </div>
+                <div class="columna-section1">
+                    <div class="caja">
+                        <img src="{{url_for('static',filename='episodio6.jpg')}}">
+                        <h3>El imperio contrataca, episodio V</h3>
+                        <p>se estrena en 1980 siendo considerada la mejor de toda la saga, inmortalizando la frase:
+                            Luke, yo soy tu padre.                    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="precuelas">
+            <h1><b>Precuelas</b></h1>
+            <div class="containers">
+                <div class="fila">
+                    <div class="columna-section1">
+                        <div class="caja">
+                            <img src="{{url_for('static',filename='episodio1.jpg')}}">
+                            <h3>La Amenaza Fantasma, episodio I</h3>
+                            <p>Se estrena en el año 1977 causando un furor entre la audiencia
+                                mas jóven dando asi un impacto cultural nunca antes visto
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="columna-section1">
+                        <div class="caja">
+                            <img src="{{url_for('static',filename='episodio2.jpg')}}">
+                            <h3>La Guerra de los Clones, episodio II</h3>
+                            <p>se estrena en 1980 siendo considerada la mejor de toda la saga, inmortalizando la frase:
+                                Luke, yo soy tu padre.                    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="columna-section1">
+                        <div class="caja">
+                            <img src="{{url_for('static',filename='episodio3.jpg')}}">
+                            <h3>La Venganza de los Sith, episodio III</h3>
+                            <p>se estrena en 1980 siendo considerada la mejor de toda la saga, inmortalizando la frase:
+                                Luke, yo soy tu padre.                    
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+        </div>
+    </section>
+    
+    
+    
+    
+</body>
+</html>

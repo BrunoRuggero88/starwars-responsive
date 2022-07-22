@@ -1,0 +1,108 @@
+body{
+    font-family: "Roboto";
+}
+.cuerpo{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1/4fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header header"
+      "main main main aside"
+      "main main main aside"
+      "main main main aside"
+      "main main main aside"
+      "footer footer footer footer";  
+      height: 100%;
+      overflow: scroll;
+      position: relative;
+     
+}
+
+.encabezado { 
+  grid-area:header;
+  /*position: fixed;*/
+  border: solid;
+  border-style: inset;
+  border-color: bisque;
+  
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  z-index: 11;
+   
+}
+a{
+    text-decoration: none ;
+    color: red;
+    }
+.navegador{
+    position: fixed;   
+     
+    flex-direction: row;
+    background-color: black;
+   height: 5%;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   
+   
+   
+         
+}
+.img1{
+    width: 25%;
+}
+.img2{
+    width: 100%;
+    height: 61%;
+}
+.img3{
+    height: 70%;
+    width: 5%;
+    margin: 5%;
+
+}
+.img3{
+    width: 80%;
+}
+.pie { grid-area: footer;
+background-color: orange;
+
+height: 100%;
+width: 100%;
+display: flex;
+align-content: space-around;
+}
+.barralateral { 
+    
+    grid-area: aside; 
+background-color: yellow;}
+.principal { 
+    position: relative;
+    
+    grid-area: main; 
+z-index: 10;}
+.fila{
+    
+    height: 25%;
+    display: flex;
+    background-color:rgb(163, 193, 158);
+    
+    overflow: scroll;
+}
+.columna{
+    width: 33.33%;
+    margin: 2%;
+    border: solid gold;
+    text-align: center;
+    
+}
+.columna2{
+    margin-inline: 9%;
+    margin-block: 2%;
+    border: solid gold;
+    text-align: center;
+    overflow: scroll;
+    
+}
